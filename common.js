@@ -13,5 +13,13 @@ function criarGrafico(data, layout){
      document.getElementByd('graficos-container')
     .appendchild(grafico)
     Plontly.newPlot(grafico,data, layout)
-}
-export {getCSS, tickConfig}
+    }
+    function incluirTexto (texto){
+        const container = document.createElement('p')
+        ('graficos-container');
+        paragrafo.classlist.add('graficos-container__texto')
+        paragrafo.innerHTML = texto
+        container.appendChild(paragrafo)
+    }
+    
+export {getCSS, tickConfig,criarGrafico,incluirTexto}
